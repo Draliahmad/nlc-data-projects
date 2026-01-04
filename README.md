@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18148269.svg)](https://doi.org/10.5281/zenodo.18148269)
+
 # NLC Data Projects
 
 Data-driven analysis and optimization of nanostructured lipid carriers (NLCs) for drug delivery applications.
