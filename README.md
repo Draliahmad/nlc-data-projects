@@ -20,6 +20,19 @@ Extracted from experimental tables in the MSc thesis, including:
 - Correlation heatmaps of NLC parameters
 - Scatter plots (Size vs EE, Zeta potential vs PDI)
 - Composite optimization scoring for formulation ranking
+## Key Visualizations
+
+### Correlation Heatmap of NLC Parameters
+![Correlation Heatmap](figures/heatmap_correlation.png)
+
+### Particle Size vs Entrapment Efficiency
+![Size vs EE](figures/size_vs_EE.png)
+
+### Zeta Potential vs Polydispersity Index (PDI)
+![Zeta Potential vs PDI](figures/ZP_vs_PDI.png)
+
+### Polydispersity Index vs Entrapment Efficiency
+![PDI vs EE](figures/PDI_vs_EE.png)
 
 ## Key Findings
 - Strong positive correlation between particle size and entrapment efficiency
