@@ -1,76 +1,43 @@
-# Data-Driven Optimization of Meropenem–Thyme Oil Co-Loaded Nanostructured Lipid Carriers (NLCs)
+# NLC Data Projects
+
+Data-driven analysis and optimization of nanostructured lipid carriers (NLCs) for drug delivery applications.
 
 ## Project Overview
-This project applies data-science techniques to experimental formulation data derived from an MSc thesis on meropenem–thyme oil co-loaded nanostructured lipid carriers (NLCs) developed for respiratory infections.
-
-Using Python-based statistical analysis and visualization, the study identifies key physicochemical drivers of formulation performance and applies multi-criteria decision analysis (MCDA) to objectively determine the optimal formulation.
-
----
+This repository contains reproducible data analysis workflows derived from an MSc thesis focused on
+meropenem–thyme oil co-loaded NLCs. The goal is to apply statistical analysis and visualization to
+identify optimal formulations based on physicochemical properties.
 
 ## Dataset
-The dataset includes experimentally measured formulation parameters:
+Extracted from experimental tables in the MSc thesis, including:
 - Particle size (nm)
 - Polydispersity index (PDI)
 - Zeta potential (mV)
-- Encapsulation efficiency (%)
-- Thyme oil loading (mg)
+- Entrapment efficiency (%)
+- Thyme oil concentration (mg)
 
-All data were extracted programmatically from the thesis document and cleaned for analysis.
-
----
-
-## Methods
-The analytical workflow includes:
-1. Automated extraction of tables from the thesis document
-2. Data cleaning and normalization
-3. Correlation analysis (Pearson correlation heatmap)
-4. Trade-off visualization:
-   - Size vs Encapsulation Efficiency
-   - PDI vs Encapsulation Efficiency
-   - Zeta Potential vs PDI
-5. Multi-criteria optimization scoring integrating:
-   - Particle size (minimized)
-   - PDI (minimized)
-   - Absolute zeta potential (maximized)
-   - Encapsulation efficiency (maximized)
-
-Weights were assigned based on pharmaceutical formulation priorities.
-
----
+## Analysis Included
+- Data cleaning and standardization
+- Correlation heatmaps of NLC parameters
+- Scatter plots (Size vs EE, Zeta potential vs PDI)
+- Composite optimization scoring for formulation ranking
 
 ## Key Findings
-- Particle size showed a strong positive correlation with encapsulation efficiency.
-- Lower PDI was associated with improved encapsulation efficiency.
-- Zeta potential remained stable across formulations, indicating good colloidal stability.
-- Batch D was identified as the optimal formulation, balancing homogeneity, stability, and high encapsulation efficiency.
-
----
+- Strong positive correlation between particle size and entrapment efficiency
+- Lower PDI associated with improved formulation stability
+- Batch D identified as the optimal formulation based on weighted multi-parameter scoring
 
 ## Repository Structure
-nlc-data-projects/
-├── README.md
-├── data/
-├── figures/
-├── notebooks/
-├── outputs/
-├── src/
-└── 01_optimization_dashboard.ipynb
----
+data/ → Raw and extracted experimental tables
+figures/ → Publication-quality plots
+notebooks/ → Jupyter notebooks for analysis
+outputs/ → Processed datasets
+src/ → Utility scripts
 
-## Tools
-- Python (Pandas, NumPy, Matplotlib, Seaborn)
+## Tools Used
+- Python (pandas, numpy, matplotlib, seaborn)
 - JupyterLab
-- Multi-criteria decision analysis (MCDA)
-- Scientific data visualization
-
----
-
-## Relevance
-This project demonstrates the integration of pharmaceutical formulation science with data-driven analytics and decision-making, reflecting real-world pharmaceutical R&D workflows.
-
----
+- Git & GitHub
 
 ## Author
-Ali Ahmad  
-MBBS | MSc Clinical & Molecular Microbiology | MSc Drug Discovery & Development  
-Research interests: Nanomedicine, drug delivery, antimicrobial therapy, and data-driven pharmaceutical science
+**Ali Ahmad**  
+MSc Drug Discovery & Development | Clinical & Molecular Microbiology  
